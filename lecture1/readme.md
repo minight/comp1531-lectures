@@ -1,6 +1,16 @@
-# nginx-uwsgi-flask
+# COMP1531 Lecture 1 Demo Materials
 
-haha i'm just stealing someone elses docker image beacuse i don't trust it.
+This is the demo website for the COMP1531 Security Lecture 1.
 
-https://github.com/tiangolo/uwsgi-nginx-docker
-https://github.com/tiangolo/uwsgi-nginx-flask-docker/blob/master/python3.6/Dockerfile
+Lecture Slides: https://goo.gl/LXTEo2
+
+You can build and run the demo as follows:
+
+```sh
+git clone https://github.com/minight/comp1531-lectures.git
+cd comp1531-lectures/lecture1
+docker build .
+docker run -i -t -p80:80 <imageid>
+```
+
+message @seanyeoh on twitter or sy on k17hackers.slack.com
