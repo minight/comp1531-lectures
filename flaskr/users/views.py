@@ -72,6 +72,7 @@ def query():
 
 
 @app.route("/profile", methods=['GET', 'POST'])
+@app.route("/profile/", methods=['GET', 'POST'])
 @app.route("/profile/<id>", methods=['GET', 'POST'])
 @login_required
 def profile(id=''):
