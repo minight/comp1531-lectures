@@ -1,7 +1,7 @@
 {% extends "flask_user/public_base.html" %}
 
 {% block content %}
-<h1>{%trans%}Sign in{%endtrans%}</h1>
+<h1>{%trans%}Register{%endtrans%}</h1>
 
 <form action="{{url_for('user.register')}}" method="POST">
   {% set field = form.username %}
